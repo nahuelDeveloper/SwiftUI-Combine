@@ -11,7 +11,7 @@ struct SearchUserView: View {
                 }
 
                 List(viewModel.users) { user in
-                    NavigationLink(destination: Text("Detail")) {
+                    NavigationLink(destination: UserDetailView(user: User.mockUser())) {
                         SearchUserRow(viewModel: self.viewModel, user: user)
                             .onAppear { self.viewModel.fetchImage(for: user) }
                     }
