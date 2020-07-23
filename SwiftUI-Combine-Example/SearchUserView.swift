@@ -11,11 +11,19 @@ struct SearchUserView: View {
                 }
 
                 List(viewModel.users) { user in
-                    SearchUserRow(viewModel: self.viewModel, user: user)
-                        .onAppear { self.viewModel.fetchImage(for: user) }
+                    NavigationLink(destination: Text("Detail")) {
+                        SearchUserRow(viewModel: self.viewModel, user: user)
+                            .onAppear { self.viewModel.fetchImage(for: user) }
+                    }
                 }
-                }
-                .navigationBarTitle(Text("Users"))
+            }
+            .navigationBarTitle(Text("Users"))
         }
+    }
+}
+
+struct SearchUserView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchUserView(viewModel: SearchUserViewModel())
     }
 }
