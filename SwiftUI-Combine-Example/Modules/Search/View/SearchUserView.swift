@@ -11,13 +11,14 @@ struct SearchUserView: View {
                 }
 
                 List(viewModel.users) { user in
-                    NavigationLink(destination: UserDetailView(user: User.mockUser())) {
+                    NavigationLink(destination: UserDetailView(user: user)) {
                         SearchUserRow(viewModel: self.viewModel, user: user)
                             .onAppear { self.viewModel.fetchImage(for: user) }
                     }
                 }
             }
             .navigationBarTitle(Text("Users"))
+                
         }
     }
 }

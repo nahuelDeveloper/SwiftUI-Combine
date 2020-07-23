@@ -20,6 +20,7 @@
 		6B194F1B22A7112D001B3151 /* SearchUserBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B194F1A22A7112D001B3151 /* SearchUserBar.swift */; };
 		B8A0147624C9F70E00C51E96 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B8A0147524C9F70E00C51E96 /* user.json */; };
 		B8A0147924C9F76B00C51E96 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A0147824C9F76B00C51E96 /* UserDetailView.swift */; };
+		B8C69DD524CA281200E86AF9 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C69DD424CA281200E86AF9 /* UserDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6B194F1A22A7112D001B3151 /* SearchUserBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserBar.swift; sourceTree = "<group>"; };
 		B8A0147524C9F70E00C51E96 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		B8A0147824C9F76B00C51E96 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		B8C69DD424CA281200E86AF9 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B8A0147824C9F76B00C51E96 /* UserDetailView.swift */,
+				B8C69DD424CA281200E86AF9 /* UserDetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				6B194F1B22A7112D001B3151 /* SearchUserBar.swift in Sources */,
 				6B194EFF22A6BA07001B3151 /* AppDelegate.swift in Sources */,
+				B8C69DD524CA281200E86AF9 /* UserDetailViewModel.swift in Sources */,
 				6B194F0122A6BA07001B3151 /* SceneDelegate.swift in Sources */,
 				6B194F0322A6BA07001B3151 /* SearchUserView.swift in Sources */,
 				B8A0147924C9F76B00C51E96 /* UserDetailView.swift in Sources */,
