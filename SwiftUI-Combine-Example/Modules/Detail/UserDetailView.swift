@@ -10,18 +10,19 @@ import SwiftUI
 
 struct UserDetailView: View {
     @ObservedObject var viewModel = UserDetailViewModel()
+    @ObservedObject var imageLoader = ImageLoader()
     
     var user: User
     
     var body: some View {
         VStack {
-            Image(uiImage: viewModel.userImage)
+            Image(uiImage: imageLoader.image)
                 .resizable()
                 .frame(width: CGFloat(200.0), height: CGFloat(200.0))
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
                 .padding(EdgeInsets(top: 20, leading: 0, bottom: 5, trailing: 0))
-                .onAppear { self.viewModel.fetchImage(for: self.user) }
+                .onAppear { self.imageLoader.loadImage(url: user.avatar_url) }
             Text(user.login)
                 .font(Font.system(size: 20).bold())
             Text(String(user.id))
